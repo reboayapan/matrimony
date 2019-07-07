@@ -1,0 +1,486 @@
+<div class="container">
+    <h4>To get more response, fill below details</h4>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#basic">Basic Details</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab"  href="#religion">Religion & Family Details</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#partner">Partner Details</a>
+        </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="basic" class="container tab-pane active">
+        <form [formGroup]="basicProfileDetail">
+          <div class="form-group row"> <h4>Location : </h4></div>         
+          <div class="form-group row">
+              <label for="country" class="col-lg-1 col-form-label col-form-label-sm">Country</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0" formControlName="country">
+                    <option>India</option>
+                    <option>Srilanka</option>
+                    <option>Nepal</option>
+                    <option>Singapore</option>
+                  </select>
+                </div>
+                <label for="country" class="col-lg-1 col-form-label col-form-label-sm ">State</label>
+                <div class="col-lg-3">
+                    <select id="profile" class="form-control form-control-sm" size="0" formControlName="state">
+                      <option>TamilNadu</option>
+                      <option>Kerala</option>
+                      <option>Delhi</option>
+                      <option>Punjab</option>
+                    </select>
+                  </div>
+                  <label for="country" class="col-lg-1 col-form-label col-form-label-sm ">District</label>
+                  <div class="col-lg-3">
+                      <select id="profile" class="form-control form-control-sm" size="0" formControlName="district" >
+                        <option>Chennai</option>
+                        <option>Madurai</option>
+                        <option>Theni</option>
+                        <option>Kanchipuram</option>
+                      </select>
+                    </div>
+          </div>
+          <hr>
+
+          <div class="form-group row eduction"> <h4>Education and Occupation : </h4></div>
+
+          <div class="form-group row">
+              <label for="education" class="col-lg-2 col-form-label col-form-label-sm ">Education</label>
+              <div class="col-sm-3">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="B.Tech (IT)" formControlName="education">
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Occupation Type</label>
+              <div class="form-check form-check-inline occupation">
+                  <input class="form-check-input " type="radio" name="private" id="inlineRadio1" value="private" formControlName="private">
+                  <label class="form-check-label" for="inlineRadio1">Private</label>
+                </div>
+                <div class="form-check form-check-inline occupation1">
+                  <input class="form-check-input" type="radio" name="government" id="inlineRadio2" value="government" formControlName="government" >
+                  <label class="form-check-label" for="inlineRadio2">Government</label>
+                </div>
+                <div class="form-check form-check-inline occupation2">
+                  <input class="form-check-input" type="radio" name="business" id="inlineRadio3" value="business" formControlName="business">
+                  <label class="form-check-label" for="inlineRadio3">Business</label>
+                </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Working Field</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0" formControlName="workingfield" >
+                    <option>Software Professional</option>
+                    <option>Hr Department</option>
+                    <option>Mechnical Dept</option>
+                    <option>Core Department</option>
+                  </select>
+              </div>
+              <label for="country" class="col-lg-1 col-form-label col-form-label-sm ">Designation</label>
+              <div class="col-sm-3">
+                    <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Software Developer" formControlName="designation">
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm ">Business Type</label>
+              <div class="col-sm-3">
+                  <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Rice Business" formControlName="businesstype">
+            </div>
+            <div class="col-sm-3">
+              <small id="passwordHelpInline" class="text-muted">
+                If you are doing business.
+              </small>
+            </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Income</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0" formControlName="income">
+                    <option>3 - 5 lakhs per annum</option>
+                    <option>5 - 7 lakhs per annum</option>
+                    <option>7 - 10 lakhs per annum</option>
+                    <option>> 10 lakhs per annum</option>
+                  </select>
+              </div>
+          </div>
+
+          <hr>
+
+          <div class="form-group row eduction"> <h4>Basic Information : </h4></div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Weight</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0" formControlName="weight">
+                    <option>40 kg</option>
+                    <option>41 kg</option>
+                    <option>42 kg</option>
+                    <option>43 kg</option>
+                    <option>44 kg</option>
+                    <option>45 kg</option>
+                    <option>46 kg</option>
+                    <option>47 kg</option>
+                    <option>48 kg</option>
+                    <option>49 kg</option>
+                    <option>50 kg</option>
+                    <option>51 kg</option>
+                  </select>
+              </div>
+              <label for="country" class="col-lg-1 col-form-label col-form-label-sm ">Height</label>
+              <div class="col-sm-3">
+                  <select id="profile" class="form-control form-control-sm" size="0" formControlName="height">
+                    <option>5ft 0in</option>
+                    <option>5ft 1in</option>
+                    <option>5ft 2in</option>
+                    <option>5ft 3in</option>
+                    <option>5ft 4in</option>
+                    <option>5ft 5in</option>
+                    </select>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Body Type</label>
+              <div class="form-check form-check-inline col-sm-2 ">
+                  <input class="form-check-input " type="radio" name="bodyType" id="inlineRadio1" value="slim" formControlName="bodyType">
+                  <label class="form-check-label" for="inlineRadio1">Slim</label>
+                </div>
+                <div class="form-check form-check-inline col-sm-2">
+                  <input class="form-check-input" type="radio" name="bodyType" id="inlineRadio2" value="average" formControlName="bodyType">
+                  <label class="form-check-label" for="inlineRadio2">Average</label>
+                </div>
+                <div class="form-check form-check-inline col-sm-2">
+                  <input class="form-check-input" type="radio" name="bodyType" id="inlineRadio3" value="athletic" formControlName="bodyType">
+                  <label class="form-check-label" for="inlineRadio3">Athletic</label>
+                </div>
+                <div class="form-check form-check-inline col-sm-2">
+                    <input class="form-check-input" type="radio" name="bodyType" id="inlineRadio3" value="heavy" formControlName="bodyType">
+                    <label class="form-check-label" for="inlineRadio3">Heavy</label>
+                  </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Complexion</label>
+              <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="complexion" id="inlineRadio3" value="dark" formControlName="complexion">
+                  <label class="form-check-label" for="inlineRadio3">Dark</label>
+                </div>
+              <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input " type="radio" name="complexion" id="inlineRadio1" value="very fair" formControlName="complexion">
+                  <label class="form-check-label" for="inlineRadio1">Very Fair</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="complexion" id="inlineRadio2" value="fair" formControlName="complexion">
+                  <label class="form-check-label" for="inlineRadio2">Fair</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="complexion" id="inlineRadio3" value="wheatishbrown" formControlName="complexion">
+                  <label class="form-check-label" for="inlineRadio3">Wheatish Brown</label>
+                </div>
+               
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Eating Habit</label>
+              <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input " type="radio" name="eatingHabit" id="inlineRadio1" value="veg" formControlName="eatingHabit">
+                  <label class="form-check-label" for="inlineRadio1">Veg</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="eatingHabit" id="inlineRadio2" value="Non Veg" formControlName="eatingHabit">
+                  <label class="form-check-label" for="inlineRadio2">Non Veg</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="eatingHabit" id="inlineRadio3" value="Eggetarian" formControlName="eatingHabit">
+                  <label class="form-check-label" for="inlineRadio3">Eggetarian</label>
+                </div>
+               
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Drinking Habit</label>
+              <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input " type="radio" name="drinkingHabit" id="inlineRadio1" value="No" formControlName="drinkingHabit">
+                  <label class="form-check-label" for="inlineRadio1">No</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="drinkingHabit" id="inlineRadio2" value="Drinks Socially" formControlName="drinkingHabit">
+                  <label class="form-check-label" for="inlineRadio2">Drinks Socially</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="drinkingHabit" id="inlineRadio3" value="Yes" formControlName="drinkingHabit">
+                  <label class="form-check-label" for="inlineRadio3">Yes</label>
+                </div>
+                
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Smoking Habit</label>
+              <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input " type="radio" name="smokingHabit" id="inlineRadio1" value="smokingNo" formControlName="smokingHabit">
+                  <label class="form-check-label" for="inlineRadio1">No</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="smokingHabit" id="inlineRadio2" value="smokingOccasionally" formControlName="smokingHabit">
+                  <label class="form-check-label" for="inlineRadio2">Occasionally</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="smokingHabit" id="inlineRadio3" value="smokingYes" formControlName="smokingHabit">
+                  <label class="form-check-label" for="inlineRadio3">Yes</label>
+                </div>      
+          </div>
+
+          <hr>
+          <div class="form-group row">
+              <div class="col-lg-8">
+                <button class="btn btn-primary next-button" (click)="onSubmit()">
+                    Submit
+                  </button>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div id="religion" class="container tab-pane fade">
+        <form [formGroup]="basicProfileDetail">
+          <div class="form-group row "> <h4>Religion Details : </h4></div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Religion</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                    <option>Muslim</option>
+                    <option>Hindu</option>
+                    <option>Christian</option>
+                    <option>Jain</option>
+                    <option>Other</option>  
+                  </select>
+              </div>
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm ">Caste</label>
+              <div class="col-sm-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                      <option>vanniyar</option>
+                      <option>Hindu</option>
+                      <option>Christian</option>
+                      <option>Jain</option>
+                      <option>Other</option>
+                    </select>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Raasi</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                    <option>Muslim</option>
+                    <option>Hindu</option>
+                    <option>Christian</option>
+                    <option>Jain</option>
+                    <option>Other</option>  
+                  </select>
+              </div>
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm ">Star</label>
+              <div class="col-sm-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                      <option>vanniyar</option>
+                      <option>Hindu</option>
+                      <option>Christian</option>
+                      <option>Jain</option>
+                      <option>Other</option>
+                    </select>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Gothram</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                    <option>Software Professional</option>
+                    <option>Hr Department</option>
+                    <option>Mechnical Dept</option>
+                    <option>Core Department</option>
+                  </select>
+              </div>
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm ">Birth Time</label>
+              <div class="col-sm-3">
+                    <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Software Developer">
+              </div>
+          </div>
+          <h6>Birth place</h6>
+          <div class="form-group row">
+              <label for="country" class="col-lg-1 col-form-label col-form-label-sm">Country</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                    <option>India</option>
+                    <option>Srilanka</option>
+                    <option>Nepal</option>
+                    <option>Singapore</option>
+                  </select>
+                </div>
+                <label for="country" class="col-lg-1 col-form-label col-form-label-sm ">State</label>
+                <div class="col-lg-3">
+                    <select id="profile" class="form-control form-control-sm" size="0">
+                      <option>TamilNadu</option>
+                      <option>Kerala</option>
+                      <option>Delhi</option>
+                      <option>Punjab</option>
+                    </select>
+                  </div>
+                  <label for="country" class="col-lg-1 col-form-label col-form-label-sm ">District</label>
+                  <div class="col-lg-3">
+                      <select id="profile" class="form-control form-control-sm" size="0">
+                        <option>Chennai</option>
+                        <option>Madurai</option>
+                        <option>Theni</option>
+                        <option>Kanchipuram</option>
+                      </select>
+                    </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Dosham</label>
+              <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input " type="radio" name="dosham" id="inlineRadio1" value="option1" formControlName="dosham">
+                  <label class="form-check-label" for="inlineRadio1">No</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="dosham" id="inlineRadio2" value="option2" formControlName="dosham">
+                  <label class="form-check-label" for="inlineRadio2">yes</label>
+                </div>
+                <div class="form-check form-check-inline col-lg-2">
+                  <input class="form-check-input" type="radio" name="dosham" id="inlineRadio3" value="option3" formControlName="dosham">
+                  <label class="form-check-label" for="inlineRadio3">Dont Know</label>
+                </div>      
+          </div>
+
+
+          <hr>
+
+          <div class="form-group row "> <h4>Family Details : </h4></div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Family Value</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                    <option>Traditional</option>
+                    <option>Hindu</option>
+                    <option>Christian</option>
+                    <option>Jain</option>
+                    <option>Other</option>  
+                  </select>
+              </div>
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm ">Family Type</label>
+              <div class="col-sm-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                      <option>Nuclear</option>
+                      <option>Hindu</option>
+                      <option>Christian</option>
+                      <option>Jain</option>
+                      <option>Other</option>
+                    </select>
+              </div>
+          </div>
+
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">Father Status</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                    <option>Business</option>
+                    <option>Hindu</option>
+                    <option>Christian</option>
+                    <option>Jain</option>
+                    <option>Other</option>  
+                  </select>
+              </div>
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm ">Mother Status</label>
+              <div class="col-sm-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                      <option>House Wife</option>
+                      <option>Hindu</option>
+                      <option>Christian</option>
+                      <option>Jain</option>
+                      <option>Other</option>
+                    </select>
+              </div>
+          </div>
+
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">No of Brother</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                    <option>None</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>>=5</option>  
+                  </select>
+              </div>
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm ">Brother Married</label>
+              <div class="col-sm-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                      <option>None</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>>=5</option>  
+                    </select>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm">No of Sister</label>
+              <div class="col-lg-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                      <option>None</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>>=5</option>
+                  </select>
+              </div>
+              <label for="country" class="col-lg-2 col-form-label col-form-label-sm ">Sister Married</label>
+              <div class="col-sm-3">
+                  <select id="profile" class="form-control form-control-sm" size="0">
+                      <option>None</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>>=5</option>
+                    </select>
+              </div>
+          </div>
+        </form>    
+
+      </div>
+      <div id="partner" class="container tab-pane fade"><br>
+        <h3>Menu 2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $('.next-button').click(function(){
+        $('.nav-tabs > .active').next('li').find('a').trigger('click');
+        //trigger the click on the tab same like we click on the tab
+    });
+   
+</script> -->

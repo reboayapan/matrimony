@@ -1,0 +1,70 @@
+.container{
+    margin-top: 50px;
+}
+.cards{
+    padding: 10px;
+    margin: 10px;
+}
+.name{
+    margin-left: 15px;
+    padding-right:5px;
+}
+.id{
+    padding-left:5px;
+
+}
+.test
+{
+    background-color: grey;
+   
+}
+.icon{
+    height:40px;
+    width: 40px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.close {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    top: 8%;
+    right: 0%;
+    padding: 12px 30px;
+    transform: translate(0%, -50%);
+}
+.close:hover {background: white;}
+
+.successb{
+    margin-top: 10px;
+}
+.smalltext{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shadows {
+    box-shadow: 0 8px 19px rgba(0,0,0,0.30), 0 10px 7px rgba(0,0,0,0.22);
+  }
+
+ .filters{
+    min-height: 100%;
+    height: 100%;
+ } 
+
+ .card-body{
+     margin-top: 10px;
+ }
+
+ .Chettier{
+     margin-top: 15px;
+
+ }
+
+ .dropdown-toggle{
+     padding-left: 40px;
+ }
+
+
+ 
